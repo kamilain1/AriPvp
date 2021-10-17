@@ -1,4 +1,5 @@
 import os
+import django_heroku
 
 """
 Django settings for Arithmetic_PvP_backend project.
@@ -219,3 +220,5 @@ CRONJOBS = [
 
 
 # REST_USE_JWT = True
+
+django_heroku.settings(locals())
